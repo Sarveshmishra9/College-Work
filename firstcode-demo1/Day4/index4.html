@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body1" style="background-color: red;">
+    <h1>Events in javascript</h1>
+
+    <button id="btn1">Click me</button>
+    <p>Name:</p><input type="text" placeholder="Enter your name">
+    <p>SElect a color: </p><input type="file"> 
+    <p>Type something: : </p><input type="text" placeholder="Start typing"> 
+<script>
+    let color = true;
+      document.getElementById("btn1").addEventListener("click", function () {
+        if (color == true) {
+          document.getElementById("body1").style.backgroundColor = "blue";
+          console.log(true);
+          color = false;
+        } else {
+          document.getElementById("body1").style.backgroundColor = "red";
+          console.log(false);
+          color = true;
+        }
+      });
+
+      let box1 = document.createElement('div')
+      box1.id = "firstbox"
+      document.body.appendChild(box1);
+
+      let button = document.createElement('button')
+      button.textContent = "Click here"
+      button.id = "btn2"
+      box1.appendChild(button);
+
+      let para = document.createElement('p')
+      para.innerHTML = "<b>I am a paragraph</b>";
+      para.id = "para"
+      box1.appendChild(para);
+
+
+
+</script>    
+</body>
+</html>

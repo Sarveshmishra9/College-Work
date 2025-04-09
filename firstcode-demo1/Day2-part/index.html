@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    background-color: black;
+    }
+        .parent{
+          
+            height:800px;
+            display:flex;
+            justify-content: center;
+          align-items:center;
+        }
+.box{
+    height:500px;
+    width:200px;
+    border:2px solid white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+#div1{
+    background-color: white;;
+    width:100px;
+    height:100px;
+    border:2px solid white;
+}
+#div2{
+    color:red;
+    font-size:25px;
+}
+#div3{
+    color:white;
+    text-align:center;
+}
+#div4{
+    font-size:20px;
+    color:blue;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    font-size:20px;
+    color:white;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container" id="container-1">PRODUCTS</div>
+        <div class="container" id="container-2">DISCOUNTS</div>
+        <div class="container" id="container-3">OUR PARTNERS</div>
+        <div class="container" id="container-4">ABOUT US</div>
+    </div>
+    <div class="parent">
+        <div class="box" id="Box1">
+            <div  class=" div" id="div1"></div><br>
+            <div  class=" div" id="div2">MATTE</div><br>
+            <div  class=" div" id="div3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, necessitatibus?</div><br>
+            <div  class=" div" id="div4">Explore</div><br>
+        </div>
+        <div class="box" id="Box1">
+        <div  class=" div" id="div1"></div><br>
+        <div  class=" div" id="div2">LAKME</div><br>
+        <div  class=" div" id="div3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, odit.</div><br>
+        <div  class=" div" id="div4">Explore</div><br>
+        </div>
+        <div class="box" id="Box1">
+            <div  class=" div" id="div1"></div> <br>
+            <div  class=" div" id="div2">HIGH-GLOSS</div><br>
+            <div  class=" div" id="div3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, numquam.</div><br>
+            <div  class=" div" id="div4">Explore</div><br>
+        </div>
+    </div>
+</body>
+</html>

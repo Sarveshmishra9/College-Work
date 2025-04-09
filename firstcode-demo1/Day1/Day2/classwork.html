@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .parent {
+            font: 90px;
+            height: 900px;
+            display: flex;
+            background-color: rgba(183, 174, 161, 0.641);
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            align-content: space-around;
+        }
+        .Box {
+            font-weight: bolder;
+            font-size: 20px;
+
+            height: 500px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: whitesmoke;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        #Box-1 {
+            background-color: whitesmoke;
+        }
+        #Box-2 {
+            background-color: whitesmoke;
+        }
+        #Box-3 {
+            background-color: whitesmoke;
+        }
+        .price {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .signup-btn {
+            font-size: 18px;
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .signup-btn:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="Box" id="Box-1">
+            <div>Basic</div>
+            <div class="price">$10/month <br> Feature 1 <br> Feature 2</div>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+        <div class="Box" id="Box-2">
+            <div>Premium</div>
+            <div class="price">$20/month <br> Feature 1 <br> Feature 2 <br> Feature 3</div>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+        <div class="Box" id="Box-3">
+            <div>Pro</div>
+            <div class="price">$50/month <br> Feature 1 <br> Feature 2 <br> Feature 3 <br> Feature 4</div>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>

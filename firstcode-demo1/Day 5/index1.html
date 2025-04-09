@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub API Fetch Example</title>
+</head>
+<body>
+
+    <h1>GIT HUB ACCOUNT</h1>
+    <button onclick="fetchData()">Search</button>
+    <pre id="output"></pre>
+
+    <script>
+        // Function to fetch data using Promises
+        function fetchUsingPromise() {
+            const url = 'https://api.github.com/users/sarvesh/repos'; // Example GitHub API URL
+            let b = fetch(url);
+            b.then((response) => {
+                return response.json(); // Convert to JSON
+            }).then((data) => {
+                console.log(data);
+                document.getElementById('output').textContent = JSON.stringify(data, null, 2); // Display formatted JSON
+            }).catch((error) => {
+                console.log("Error: " + error);
+            }).finally(() => {
+                console.log("Promise-based fetch complete");
+            });
+        }
+
+        // Async function using await
+        async function fetchUsingAsync() {
+            const url = 'https://api.github.com/users/sarvesh/repos'; // Example GitHub API URL
+            try {
+                let response = await fetch(url);
+                let data = await response.json(); // Convert to JSON
+                console.log(data);
+                document.getElementById('output').textContent = JSON.stringify(data, null, 2); // Display formatted JSON
+            } catch (error) {
+                console.log("Error: " + error);
+            } finally {
+                console.log("Async/await fetch complete");
+            }
+        }
+
+        // Call the async function on button click
+        function fetchData() {
+            // You can call either method here based on your preference:
+            // fetchUsingPromise();  // Uncomment to use promise-based approach
+            fetchUsingAsync(); // Uses async/await approach
+        }
+    </script>
+</body>
+</html>

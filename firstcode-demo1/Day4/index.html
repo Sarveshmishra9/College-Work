@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">click here</button>
+    <p id="para">Insert Here</p>
+</body>
+<script>
+    let button =document.createElement("button");
+    button.textcontent="click me";
+    button.id="btn"
+    
+    document.getElementById("btn").onclick=function(){
+        document.getElementById("para").innerHTML="<b>ABESEC</b>";
+    }
+    document.getElementById("btn").onclick=function(){
+        document.getElementById("para").innerHTML="<b>Another Click</b>";
+    };
+    
+</script>
+</html>
