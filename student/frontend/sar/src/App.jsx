@@ -20,17 +20,36 @@
 // }
 
 // export default App
-import './App.css'
+// import './App.css'
+// import Register from './components/Register'
+// import View from './components/View'
+
+
+// function App() {
+
+//   return (
+//     <div>
+//       <h1>CRUD FUNCTION</h1>
+//       <Register/>
+//       <View/>
+//     </div>
+//   )
+// }
+
+// export default App
+import React from 'react'
 import Register from './components/Register'
 import View from './components/View'
-
-
-function App() {
-
+import Update from './components/Update'
+import Delete from './components/Delete'
+import './App.css'
+const App = () => {
   return (
     <div>
-      <h1>CRUD FUNCTION</h1>
+      <h1 style={{backgroundColor: 'greenyellow',height:'50px',lineHeight:'50px'}}>User Registration System</h1>
       <Register/>
+      <Update/>
+      <Delete/>
       <View/>
     </div>
   )
